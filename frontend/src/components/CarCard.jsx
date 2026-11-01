@@ -1,0 +1,1 @@
+export default function CarCard({ car, children }) { return <article className="card"><span className="tag">{car.brand || 'nexTrip'}</span><h3>{car.title}</h3><p>{car.description || 'Vehicle details available on enquiry.'}</p><p>{car.year || '—'} · ₹{Number(car.price || 0).toLocaleString('en-IN')}</p>{children}</article>; }
